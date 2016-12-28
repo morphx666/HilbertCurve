@@ -37,9 +37,10 @@ Public Class Hilbert
         Return p
     End Function
 
-    Public Shared Function IndexToTransformedPoint(n As Integer, index As Integer) As Point
+    Public Shared Function IndexToTransformedPoint(n As Integer, index As Integer, w As Integer) As Point
         Dim p As Point = IndexToPoint(n, index)
-
+        Dim g As Integer = w \ n
+        Return New Point(p.X * g + g / 2, p.Y * g + g / 2)
     End Function
 
     Private Shared Function Rotate(n As Integer, p As Point, rx As Integer, ry As Integer) As Point
