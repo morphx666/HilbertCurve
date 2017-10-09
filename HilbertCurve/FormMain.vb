@@ -222,6 +222,7 @@ Public Class FormMain
         g.DrawString("[ENTER] Toggle animation", Me.Font, If(stepByStepEnable, Brushes.OrangeRed, Brushes.Gray), 10, 10 + 7 * Me.Font.Height)
         g.DrawString("[T]     Toggle test point", Me.Font, If(showTestPoint, Brushes.OrangeRed, Brushes.Gray), 10, 10 + 8 * Me.Font.Height)
         g.DrawString("[C]     Toggle color mode", Me.Font, If(colorMode, Brushes.OrangeRed, Brushes.Gray), 10, 10 + 9 * Me.Font.Height)
+        g.DrawString("[Mouse] Drag test point", Me.Font, Brushes.Gainsboro, 10, 10 + 10 * Me.Font.Height)
 
         If screenTooSmall Then
             g.DrawString("<< Screen too small >>", Me.Font, Brushes.Red, 10, 10 + 11 * Me.Font.Height)
